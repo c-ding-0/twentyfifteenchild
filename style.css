@@ -1,0 +1,236 @@
+/*
+ Theme Name:   Twentyfifteen Child
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       Ding, C.
+ Author URI:   http://example.com
+ Template:     twentyfifteen
+ Version:      20210901
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twentyfifteenchild
+*/
+
+blockquote strong,
+blockquote b {
+	font-weight: 800!important;
+}
+
+body{
+    background-color: #fff;
+}
+.site{
+    background-color: #fff;
+    overflow: hidden;
+}
+section{
+    border:none;
+}
+.site-main{
+    padding:0;
+}
+.site-main > *, .page-content, .page-header, .site-footer{
+    border:none;
+    margin: 0;
+    border-bottom:1px solid rgba(51, 51, 51, 0.1);
+}
+.page-header + .page-content,
+.page-header + .hentry,
+.hentry + .hentry{
+    margin:0;
+}
+.entry-content{
+    padding-bottom: 1em;
+}
+.entry-footer{
+    background-color: transparent;
+    padding-top:0em;
+}
+.entry-footer .menu-item>a{
+    border:none;
+}
+.post-navigation{
+    display: none;
+}
+.sidebar, body::before{
+    background-color:   #f5f5f5;
+}
+.secondary.toggled-on{
+    border-bottom: 1px solid lightgrey;
+}
+.widget.widget_recent_entries ul,  .widget.widget_recent_comments ul{display:none;}
+/*.widget.widget_tag_cloud ul li a{font-size:inherit!important;}*/
+@media screen and (min-width: 87.6875em) {
+    .site{
+        max-width:100%;
+    }
+    body::before{
+        width:29.4118%;
+    }
+}
+/*
+.secondary.toggled-on[aria-expanded="true"]{
+    position:fixed;
+    z-index:1;
+    top:0;bottom: 0;left:0;width: 61.8%;
+    background-color: #f5f5f5;
+}*/
+
+@media screen and (min-width: 38.75em) {
+    .secondary {
+        margin:0;
+    }
+    article{
+        padding-left: 7.6923%;
+        padding-right:7.6923%;
+    }
+    article > *{
+        padding-left:0!important;
+        padding-right: 0!important;
+    }
+}
+@media screen and (min-width: 59.6875em) {
+    .site-footer {
+        margin:0 0 0 29.4118%;
+        width:70.5882%
+    }
+}
+
+/*
+fix twentyfifteen
+ */
+@media print {
+    .entry-footer{
+        display:none;
+    }
+}
+.entry-footer .edit-link{display:none;}
+.entry-meta>span{
+	margin:0;
+	display:block;
+	padding:0.25em;
+}
+
+.ui-dialog .ui-dialog-content a{
+    text-decoration:underline;
+}
+
+/*
+icons
+ */
+.secondary-toggle::before, .pagination .next::before,.pagination .prev::before,
+.bypostauthor > article .fn::after, .entry-summary .more-link::after{
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-size:medium;
+}
+.secondary-toggle::before{
+    content:"\f0c9";
+}
+.secondary-toggle.toggled-on::before{
+    content:"\f00d";
+    font-size:medium;
+}
+.pagination .next::before{
+    content:"\f061";
+
+}
+.pagination .prev::before{
+    content:"\f060";
+
+}
+.bypostauthor > article .fn::after{
+    content:"\f007";
+}
+.entry-summary .more-link::after{
+    content:"\f061";
+}
+/*
+list page
+*/
+.bracket{
+    font-weight: normal;
+    color:grey;
+}
+.bracket::before{
+    content:"[";
+}
+.bracket::after{
+    content:"]";
+}
+.bracket:empty::before{
+    content:"";
+}
+.bracket:empty::after{
+    content:"";
+}
+.list .bracket{
+    font-size: smaller;
+}
+.list a{
+    border-bottom: none;
+}
+
+/*
+ * tag cloud
+*/
+.wp-tag-cloud li a{
+    padding: 0 0.25em;
+}
+.wp-tag-cloud li:first-child a{
+    padding: 0 0.25em 0 0;
+}
+.wp-tag-cloud li:last-child a{
+    padding: 0  0 0 0.25em;
+}
+/**
+ * 16.1 Mobile Large 620px
+ */
+
+@media screen and (min-width: 38.75em) {
+}
+
+/**
+ * 16.2 Tablet Small 740px
+ */
+
+@media screen and (min-width: 46.25em) {
+}
+/**
+ * 16.3 Tablet Large 880px
+ */
+
+@media screen and (min-width: 55em) {
+}
+
+/**
+ * 16.4 Desktop Small 955px
+ */
+
+@media screen and (min-width: 59.6875em) {
+}
+/**
+ * 16.5 Desktop Medium 1100px
+ */
+
+@media screen and (min-width: 68.75em) {
+}
+
+/**
+ * 16.6 Desktop Large 1240px
+ */
+
+@media screen and (min-width: 77.5em) {
+}
+
+/**
+ * 16.7 Desktop X-Large 1403px
+ */
+
+@media screen and (min-width: 87.6875em) {
+}
